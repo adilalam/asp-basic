@@ -34,7 +34,11 @@ namespace GradeBook
       book.AddGrade(9.1);
       book.AddGrade(8.1);
 
-      book.ShowStatics();
+      var stats = book.GetStatics();
+
+      Console.WriteLine("High Grade " + stats.HighGrade);
+      Console.WriteLine("Low Grade " + stats.LowGrade);
+      Console.WriteLine("Average " + stats.Average);
     }
   }
 }
